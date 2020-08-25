@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_marginTop="100dp"
+    tools:context=".Database.DatabaseGravarAlterarRemoverActivity">
+
+    <EditText
+        android:id="@+id/editTextNomePasta"
+        android:layout_width= "match_parent"
+        android:layout_height= "wrap_content"
+        android:hint="Nome da Pasta (Opcinal para Cadastro)"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width= "match_parent"
+        android:layout_height= "wrap_content"
+        android:hint="Nome"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/editTextIdade"
+        android:layout_width= "match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Idade"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:inputType="number"/>
+
+    <LinearLayout
+
+        android:layout_width= "match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSalvar"
+            android:layout_width= "100dp"
+            android:layout_height= "wrap_content"
+            android:layout_weight="1"
+            android:text="Salvar"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/buttonAlterar"
+            android:layout_width= "100dp"
+            android:layout_height= "wrap_content"
+            android:layout_weight="1"
+            android:text="Alterar"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/buttonRemover"
+            android:layout_width= "100dp"
+            android:layout_height= "wrap_content"
+            android:layout_weight="1"
+            android:text="Remover"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+</LinearLayout>

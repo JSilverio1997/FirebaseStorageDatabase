@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="Database_Lista_Funcionarios.DatabaseListaFuncionariosActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_Database_ListaFuncionario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="1dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_Database_ListaFuncionario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageView_Database_Funcionario_LimparCampos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_limpar_campos_24dp"
+                android:layout_gravity="end"/>
+            
+            <EditText
+                android:id="@+id/editText_Database_Lista_Funcionarios_Nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome"
+                android:padding="10dp"
+                android:textSize="17sp"/>
+
+            <EditText
+                android:id="@+id/editText_Database_Lista_Funcionarios_Idade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Idade"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textSize="17sp"/>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/button_Database_Lista_Funcionarios_Salvar"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:text="Salvar"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorPrimary"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+                
+                <ImageView
+                    android:id="@+id/imageView_Database_ListaFuncionario_galeria"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_galeria_24dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView_Database_ListaFuncionario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
